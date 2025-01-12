@@ -108,13 +108,13 @@ const DepositCalculator = () => {
         <div
           className={resultVisible ? visibleResultClasses : hiddenResultClasses}
         >
-          <ul className="w-3/5 ml-5 m-2.5 p-2 rounded-xl text-xl">
+          <ul className="col-span-2 p-2 text-xl">
             <li>Initial deposit: </li>
           </ul>
-          <ul className="w-1/5 m-2.5 p-2 rounded-xl text-xl">
+          <ul className="col-start-3 p-2 text-xl">
             <li id="depOutput"></li>
           </ul>
-          <ul className="w-1/5 mt-2.5 p-2 float-left rounded-xl text-xl">
+          <ul className="col-start-4 p-2 text-xl text-center">
             <li>EUR</li>
           </ul>
         </div>
