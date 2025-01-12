@@ -1,3 +1,7 @@
-This is a simple web-application which have 2 tools:
-Balance Calculator calculates profit from deposit from initial deposit, annual deposit, lifetime and interest
-Second tool, Deposit Calculator, calculates the initial deposit needed for annual withdrawal of specified amount for certain lifetime and interest 
+# Balance Deposit Calculator
+
+This is a tool to calculate the balance and required initial deposit for a specified annual withdrawal.
+
+## Features
+- Calculates balance growth
+- Determines required initial deposit
