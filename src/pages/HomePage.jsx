@@ -10,7 +10,7 @@ const HomePage = () => {
             Choose Your Tool
           </h1>
 
-          <form className="flex-1 border-4 border-[#E5C9D7] divide-y-4 divide-[#E5C9D7] m-5 mb-3 rounded-xl grid grid-cols-1 grid-rows-2 gap-1">
+          <form className="flex-1 border-4 border-[#E5C9D7] divide-y-4 divide-[#E5C9D7] m-5 mb-3 rounded-xl grid grid-cols-1 grid-rows-2">
             <Link to="/balance-calculator">
               <div className="rounded-tl-lg rounded-tr-lg flex flex-col duration-500 hover:bg-[#E5C9D7]/15 text-2xl text-center text-white p-6">
                 Balance calculator
