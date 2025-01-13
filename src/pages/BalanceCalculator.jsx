@@ -21,22 +21,25 @@ const BalanceCalculator = () => {
     if (coefIn.value.startsWith(".")) {
       coefIn.value = coefIn.value.slice(1);
     }
+    /* MANAGING LAST INPUT FIELD MANUALLY SINCE HTML NUMBER INPUT RETURNS 0 IF ENDS WITH "." OR "," */
 
     const inputArr = ["start", "add", "years", "coef"].map((id) =>
       parseFloat(document.getElementById(id + "Input").value)
     );
+    /* CREATING ARRAY OF INPUT VALUES */
 
     if ((inputArr[0] > 0) & (inputArr[2] > 0) & (inputArr[3] > 0)) {
       let resultArr = calculateProfit(inputArr);
+      /* PUTTING CALCULATED VALUES INTO ARRAY */
 
       let resultIdArr = ["bal", "inv", "mon", "tot"];
       for (let i = 0; i < resultArr.length; i++) {
         document.getElementById(resultIdArr[i] + "Output").innerHTML =
           resultArr[i];
       }
+      /* PUTTING VALUES FROM OUTPUT ARRAY IN DOCUMENT */
 
       setResultVisible(true);
-      resultArr[3] === "0" ? setRestHidden(true) : setRestHidden(false);
     } else {
       setResultVisible(false);
     }

@@ -21,13 +21,20 @@ const DepositCalculator = () => {
     if (coefIn.value.startsWith(".")) {
       coefIn.value = coefIn.value.slice(1);
     }
+    /* MANAGING LAST INPUT FIELD MANUALLY SINCE HTML NUMBER INPUT RETURNS 0 IF ENDS WITH "." OR "," */
 
     const inputArr = ["take", "years", "coef"].map((id) =>
       parseFloat(document.getElementById(id + "Input").value)
     );
+    /* CREATING ARRAY OF INPUT VALUES */
+
     if ((inputArr[0] > 0) & (inputArr[1] > 0)) {
       let result = calculateDeposit(inputArr);
+      /* GETTING OUTPUT */
+
       document.getElementById("depOutput").innerHTML = result;
+      /* PUTTING OUTPUT INTO DOCUMENT */
+
       setResultVisible(true);
     } else {
       setResultVisible(false);
