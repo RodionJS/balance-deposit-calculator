@@ -2,7 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEuroSign } from "react-icons/fa";
-import { inputClasses, resultClasses, buttonClasses } from "../assets/css/css";
+import {
+  inputClasses,
+  resultClasses,
+  buttonClasses,
+  wrapperClasses,
+} from "../assets/css/css";
 import { calculateProfit } from "../components/script";
 
 const BalanceCalculator = () => {
@@ -47,7 +52,7 @@ const BalanceCalculator = () => {
 
   return (
     <main className="flex flex-col transition-all duration-200 ease-in-out">
-      <div className="min-w-[580px] w-4/5 md:w-3/4 lg:w-3/5 xl:w-2/5 2xl:w-1/3 mx-auto mt-4 px-4 py-1 bg-[#0D1E4C]/70 rounded-2xl shadow-2xl transform transition-all duration-200 ease-in-out">
+      <div className={wrapperClasses}>
         <div className="flex flex-col bg-[#0D1E4C]/50 my-2 rounded-2xl shadow-xl">
           <h1 className="text-slate-50 text-3xl mx-auto w-fit mt-3 select-none">
             Calculating Balance
